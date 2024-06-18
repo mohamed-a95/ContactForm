@@ -4,6 +4,10 @@
   font-size: 15px;
 }
 
+h2{
+  position: relative;
+  top: 7px;
+}
 body {
   box-sizing: border-box;
   margin: 0;
@@ -51,7 +55,6 @@ body {
 }
 
 .inp3{
-  border: 1px solid red;
 padding: 0 45px;
   
   
@@ -82,7 +85,7 @@ padding: 0 45px;
 
 
 .inp4-1{
-  border: 1px solid red;
+  
   display: flex;
   gap: 10px;
   font-size: 15px;
@@ -94,7 +97,7 @@ padding: 0 45px;
 }
 
 .inp4-12{
-  border: 1px solid red;
+  
   display: flex;
   gap: 10px;
   font-size: 15px;
@@ -111,11 +114,42 @@ padding: 0 45px;
   justify-content: center;
   padding: 0 45px;
   margin-top: 18px;
+  border-radius: 10px;
   
 }
 
 .inp5 input{
   width:652px;
   height: 100px;
-  padding: 0 45px;
+  word-wrap: break-word; 
+  white-space: pre-wrap; 
+}
+  
+  
+
+
+.messageLabel{
+position: relative;
+top: 12px;
+margin-left: 45px;
+}
+
+.btn-submit button{
+  width: 450px;
+  height: 50px;
+  
+  background-color:hsl(169, 82%, 27%) ;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-submit{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+
 }

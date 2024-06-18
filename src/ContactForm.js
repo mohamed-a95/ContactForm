@@ -8,10 +8,12 @@ function ContactForm() {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
+    reset();
   };
 
   const handleClick = (type) => {
@@ -21,6 +23,7 @@ function ContactForm() {
   return (
     <div className="contain">
       <h2>Contact Form</h2>
+      <br />
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="inp1">
           <label>Name</label>
@@ -75,7 +78,11 @@ function ContactForm() {
             max={100}
           />
         </div>
-        <input type="submit" />
+        <div className="btn-submit">
+          <button className="btn-s" type="submit">
+            sumbit
+          </button>
+        </div>
       </form>
     </div>
   );
